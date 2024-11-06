@@ -40,7 +40,7 @@
   # services.xserver.enable = true;
 
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -79,7 +79,7 @@
     wget
     docker-compose
     cloudflare-warp
-    cloudflared
+#    cloudflared
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -169,16 +169,16 @@
     enable = true;
   };
 
-  services.cloudflared = {
-    enable = true;
-    tunnels = {
-      "978fd435-ea7e-4160-a8c6-c11342e17003" = {
-        credentialsFile = "/home/taka/.cloudflared/978fd435-ea7e-4160-a8c6-c11342e17003.json";
-        ingress = {
-          "imi.ski" = "http://localhost:8080";
-        };
-        default = "http_status:404";
-      };
-    };
-  };
+#  services.cloudflared = {
+#    enable = true;
+#    tunnels = {
+#      "978fd435-ea7e-4160-a8c6-c11342e17003" = {
+#        credentialsFile = "/home/taka/.cloudflared/978fd435-ea7e-4160-a8c6-c11342e17003.json";
+#        ingress = {
+#          "imi.ski" = "http://localhost:8080";
+#        };
+#        default = "http_status:404";
+#      };
+#    };
+#  };
 }
