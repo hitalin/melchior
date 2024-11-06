@@ -77,6 +77,8 @@
     gnumake
     wget
     docker-compose
+    cloudflare-warp
+    cloudflared
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -158,6 +160,14 @@
         setSocketVariable = true;
       };
     };
+  };
+
+  services.cloudflare-warp = {
+    enable = true;
+  };
+
+  services.cloudflared = {
+    enable = true;
   };
 }
 
