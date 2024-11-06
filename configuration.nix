@@ -162,6 +162,8 @@
     };
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   services.cloudflare-warp = {
     enable = true;
   };
