@@ -171,8 +171,8 @@
   services.cloudflared = {
     enable = true;
     tunnels = {
-      "978fd435-ea7e-4160-a8c6-c11342e17003" = {
-        credentialsFile = "/home/taka/.cloudflared/978fd435-ea7e-4160-a8c6-c11342e17003.json";
+      "382adc2c-d6e1-4eed-b1c6-6371432ce594" = {
+        credentialsFile = "/root/.cloudflared/382adc2c-d6e1-4eed-b1c6-6371432ce594.json";
         ingress = {
           "imi.ski" = "http://localhost:8080";
           "mc.imi.ski" = "http://localhost:25565";
