@@ -175,6 +175,7 @@
         credentialsFile = "/home/taka/.cloudflared/978fd435-ea7e-4160-a8c6-c11342e17003.json";
         ingress = {
           "imi.ski" = "http://localhost:8080";
+          "mc.imi.ski" = "http://localhost:25565";
         };
         default = "http_status:404";
       };
